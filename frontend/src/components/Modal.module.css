@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&display=swap');
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: linear-gradient(145deg, #0a0a0a, #101010);
+  border: 1px solid #1e1e1e;
+  border-radius: 20px;
+  padding: 32px 24px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 0 0 1px #1a1a1a inset, 0 10px 20px rgba(0, 0, 0, 0.6);
+  font-family: 'Syne', sans-serif;
+  color: #f0f0f0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.modal h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-left: 3px solid #fff;
+  padding-left: 16px;
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #292929;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  outline: none;
+  font-family: 'Syne', sans-serif;
+  box-sizing: border-box;
+}
+
+.modal input:focus {
+  border-color: #fff;
+}
+
+.modal button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.8px solid #fff;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Syne', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 12px; 
+}
+
+
+
+.modal button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  border: 1px solid #292929;
+  background-color: #121212;
+  color: #e0e0e0;
+  outline: none;
+  font-family: 'Syne', sans-serif;
+  transition: border 0.2s ease;
+}
+
+.select:focus {
+  border: 1px solid #fff;
+  background-color: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 0 6px #fff7;
+}

@@ -1,0 +1,84 @@
+.authorList {
+  background: linear-gradient(145deg, #0a0a0a, #0f0f0f);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset, 0 6px 14px rgba(0, 0, 0, 0.6);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  color: #e0e0e0;
+  height: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #f2f2f2;
+  border-left: 3px solid #fff;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  user-select: none;
+}
+
+.input {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #292929;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease;
+  font-family: 'Syne', sans-serif;
+}
+
+.input:focus {
+  border: 1px solid #fff;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  user-select: none;
+}
+
+.item:hover {
+  background: #222;
+}
+
+.selected {
+  background: #444;
+}
+
+.deleteButton {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 6px;
+  line-height: 1;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.deleteButton:hover {
+  color: #ff4e4e;
+}
+
