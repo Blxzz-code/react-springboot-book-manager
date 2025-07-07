@@ -38,23 +38,17 @@
 ---
 
 ## Instalación y ejecución
-
-### 1. Clonar el repositorio
-
 ```bash
+1. Clonar el repositorio
+
 git clone https://github.com/tu-usuario/react-springboot-book-manager.git
 cd react-springboot-book-manager
 2. Configurar el backend
-bash
-Copiar
-Editar
+
 cd backend
 Asegúrate de tener creada una base de datos MySQL llamada bookdb.
 Edita el archivo src/main/resources/application.properties con tus credenciales:
 
-properties
-Copiar
-Editar
 spring.datasource.url=jdbc:mysql://localhost:3306/bookdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 spring.datasource.username=TU_USUARIO
 spring.datasource.password=TU_CONTRASEÑA
@@ -66,14 +60,10 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 server.port=8080
 Luego ejecuta:
 
-bash
-Copiar
-Editar
 mvn spring-boot:run
+
 3. Configurar el frontend
-bash
-Copiar
-Editar
+
 cd ../frontend
 npm install
 npm start
@@ -102,12 +92,10 @@ react-springboot-book-manager/
 │   └── public/
 ├── .gitignore
 └── README.md
+
 Datos de prueba
 Puedes poblar la base de datos ejecutando el siguiente script SQL:
 
-sql
-Copiar
-Editar
 INSERT INTO authors (name, nationality) VALUES 
 ('Jorge Luis Borges', 'argentina'),
 ('Mario Benedetti', 'uruguaya'),
