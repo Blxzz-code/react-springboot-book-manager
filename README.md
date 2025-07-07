@@ -111,6 +111,7 @@ INSERT INTO books (title, publication_year, author_id) VALUES
 ('final del juego', 1956, 3),
 ('bola de sebo', 1880, 4),
 ('el horla', 1887, 4);
+
 Notas técnicas
 Hooks de React para manejo de estado local
 
